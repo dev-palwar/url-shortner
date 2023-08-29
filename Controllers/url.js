@@ -8,9 +8,7 @@ const addUrl = async (req, res) => {
   let resFromDB = await URL.findOne({ originalUrl: url });
 
   if (resFromDB) {
-    return res.json({
-      message: "Already added",
-    });
+    await URL.deleteOne({ originalUrl: url });
   }
   try {
     let resFromDB = await URL.create({
