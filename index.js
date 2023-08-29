@@ -1,6 +1,7 @@
 const express = require("express");
 const connectDatbase = require("./Database/config");
-const urlRouter = require("./url");
+const urlRouter = require("./Routes/url");
+require("dotenv").config();
 
 const app = express();
 connectDatbase();

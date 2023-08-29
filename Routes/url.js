@@ -1,5 +1,5 @@
 const express = require("express");
-const {addUrl, getUrl, getAllURls} = require("./Controllers/url");
+const {addUrl, getUrl, getAllURls} = require("../Controllers/url");
 
 const urlRouter = express.Router();
 
