@@ -6,6 +6,7 @@ require("dotenv").config();
 const app = express();
 connectDatbase();
 
+app.get('/', (req, res)=> res.send("Nice working"))
 app.use(express.json());
 app.use('/url', urlRouter);
 
