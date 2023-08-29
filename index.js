@@ -9,6 +9,6 @@ connectDatbase();
 app.use(express.json());
 app.use('/url', urlRouter);
 
-app.listen(1000, ()=>{
-    console.log("Server running smooth on port 1000");
+app.listen(9000, ()=>{
+    console.log("Server running smooth on port 9000");
 })
